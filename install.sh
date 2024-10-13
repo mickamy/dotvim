@@ -1,10 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
-if command -v apt-get &> /dev/null; then
+if command -v apt &> /dev/null; then
   sudo add-apt-repository -y ppa:jonathonf/vim
-  sudo apt-get update
-  sudo apt-get install -y vim
+  sudo apt update
+  sudo apt install -y vim
   curl -sL install-node.vercel.app/lts | sudo bash -s -- -y
 
   sudo ln -s "$HOME/.vim" /root/.vim
