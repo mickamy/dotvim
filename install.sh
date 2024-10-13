@@ -13,4 +13,4 @@ if command -v apt-get &> /dev/null; then
 fi
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd "$SCRIPT_DIR/pack/plugins/start/coc.nvim" && npm ci && cd -
+cd "$SCRIPT_DIR/pack/plugins/start/coc.nvim" && sudo npm ci && cd -
