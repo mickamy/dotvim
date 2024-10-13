@@ -2,7 +2,7 @@
 set -euo pipefail
 
 if command -v apt-get &> /dev/null; then
-  sudo add-apt-repository ppa:jonathonf/vim
+  sudo add-apt-repository -y ppa:jonathonf/vim
   sudo apt-get update
   sudo apt-get install -y vim nodejs npm
 fi
