@@ -5,6 +5,8 @@ if command -v apt-get &> /dev/null; then
   sudo add-apt-repository -y ppa:jonathonf/vim
   sudo apt-get update
   sudo apt-get install -y vim nodejs npm
+
+  sudo ln -s "$HOME/.vim" /root/.vim
 fi
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
