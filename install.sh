@@ -2,14 +2,9 @@
 set -euo pipefail
 
 if command -v apt-get &> /dev/null; then
+  sudo add-apt-repository ppa:jonathonf/vim
   sudo apt-get update
-  sudo apt-get install -y git make clang libtool-bin nodejs npm
-  git clone https://github.com/vim/vim.git "$HOME/.tmp/vim"
-  cd "$HOME/.tmp/vim"
-  ./configure
-  make
-  sudo make install
-  rm -rf "$HOME/.tmp/vim"
+  sudo apt-get install -y vim nodejs npm
 fi
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
