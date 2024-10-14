@@ -4,3 +4,6 @@
 [submodule "pack/plugins/start/coc.nvim"]
 	path = pack/plugins/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
+[submodule "pack/plugins/start/fugitvie"]
+	path = pack/plugins/start/fugitvie
+	url = git@github.com:tpope/vim-fugitive.git
