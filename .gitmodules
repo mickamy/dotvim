@@ -7,3 +7,6 @@
 [submodule "pack/plugins/start/fugitvie"]
 	path = pack/plugins/start/fugitvie
 	url = git@github.com:tpope/vim-fugitive.git
+[submodule "pack/plugins/start/copilot.vim"]
+	path = pack/plugins/start/copilot.vim
+	url = https://github.com/github/copilot.vim.git
